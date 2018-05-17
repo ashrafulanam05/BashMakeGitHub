@@ -29,9 +29,11 @@ do
 	#If the user's answer is incorrect the user should be advised that their guess was either too low or too high and then they should be prompted to try to guess again.
 	elif [[ $number_of_files -gt $guess ]]
 	then 
-		echo "Too low. Please, try again..." 
+		echo "Too low." 
+		echo "Please, try again..." 
 	else
-		echo "Too high. Please, try again..."
+		echo "Too high." 
+		echo "Please, try again..."
 	fi
 done
 
